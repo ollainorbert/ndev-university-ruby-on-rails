@@ -1,0 +1,1 @@
+$logger = Logger.new(STDOUT)
