@@ -7,10 +7,10 @@ Rails.application.routes.draw do
   devise_for :admins, :skip => [:sign_up]
   # Auth END
   
-  # Supply
+  # Product
   authenticated :admin do
 	resources :products, only: [:new, :create, :edit, :update, :destroy]
   end
   resources :products, only: [:index, :show]
-  # Supply END
+  # Product END
 end

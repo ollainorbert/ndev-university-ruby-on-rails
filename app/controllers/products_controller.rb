@@ -4,11 +4,18 @@ class ProductsController < ApplicationController
   end
   
   def create
-    render plain: params[:product].inspect
+    @product = Product.new(params.require(:product).permit(:name, :price, :quantity))
+	@product.save
+	redirect_to @product
   end
   # ONLY ADMIN END
   
   def index
     @products = Product.all
   end
+  
+  def show
+    @product = Product.find(params[:id])
+  end
+  
 end
