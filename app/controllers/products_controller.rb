@@ -1,12 +1,16 @@
 class ProductsController < ApplicationController
   # ONLY ADMIN
   def new
+	@product = Product.new
   end
   
   def create
     @product = Product.new(params.require(:product).permit(:name, :price, :quantity))
-	@product.save
-	redirect_to @product
+	if @product.save
+	  redirect_to @product
+	else 
+	  render 'new'
+	end
   end
   # ONLY ADMIN END
   

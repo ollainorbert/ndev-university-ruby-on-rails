@@ -13,4 +13,10 @@ Rails.application.routes.draw do
   end
   resources :products, only: [:index, :show]
   # Product END
+  
+  # Admin Control Panel
+  authenticated :admin do
+	resources :admin_control_panel
+  end
+  # Admin Control Panel END
 end
