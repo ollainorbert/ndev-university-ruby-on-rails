@@ -1,0 +1,22 @@
+hu:
+  # header related
+  welcome: 'Üdvözöljük!'
+  railz4uniCourse: 'Railz4uniCourse!'
+  language: 'Nyelv'
+  
+  # auth related
+  login_user_link_name: 'Belépés!'
+  logout_user_link_name: 'Kilépés!'
+  registration_user_link_name: 'Regisztráció!'
+  login_admin_link_name: 'Admin Belépés!'
+  logout_admin_link_name: 'Admin Kilépés!'
+  
+  # product related
+  create_new_product: 'Új termék felvétele'
+  check_products_label: 'Lássuk a termékeket!'
+  all_products_title: 'Összes termék'
+  all_products_table_header_name: 'Név'
+  all_products_table_header_price: 'Ár'
+  all_products_table_header_quantity: 'Mennyiség'
+  all_products_table_header_link: 'Link'
+  all_products_links: 'Mutasd'

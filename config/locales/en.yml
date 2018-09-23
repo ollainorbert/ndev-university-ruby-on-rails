@@ -30,4 +30,26 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  # header related
+  welcome: 'Welcome!'
+  railz4uniCourse: 'Railz4uniCourse!'
+  language: 'Language'
+  
+  # auth related
+  login_user_link_name: 'Login!'
+  logout_user_link_name: 'Logout!'
+  registration_user_link_name: 'Registration!'
+  login_admin_link_name: 'Admin Login!'
+  logout_admin_link_name: 'Admin Logout!'
+  admin_functions: 'ADMIN FUNCTIONS'
+  admin_control_panel_label: 'Admin Control Panel'
+  
+  # product related
+  create_new_product: 'Create new product'
+  check_products_label: 'Check products!'
+  all_products_title: 'All Products'
+  all_products_table_header_name: 'Name'
+  all_products_table_header_price: 'Price'
+  all_products_table_header_quantity: 'Quantity'
+  all_products_table_header_link: 'Link'
+  all_products_links: 'Show'

@@ -1,11 +1,11 @@
-<h2>All products</h2>
+<h2><%= t(:all_products_title) %></h2>
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Price</th>
-    <th>Quantity</th>
-	<th></th>
+    <th><%= t(:all_products_table_header_name) %></th>
+    <th><%= t(:all_products_table_header_price) %></th>
+    <th><%= t(:all_products_table_header_quantity) %></th>
+    <th><%= t(:all_products_table_header_link) %></th>
   </tr>
  
   <% @products.each do |product| %>
@@ -13,7 +13,7 @@
       <td><%= product.name %></td>
       <td><%= product.price %></td>
 	  <td><%= product.quantity %></td>
-      <td><%= link_to 'Show', product_path(product) %></td>
+      <td><%= link_to t(:all_products_links), product_path(product) %></td>
     </tr>
   <% end %>
 </table>
