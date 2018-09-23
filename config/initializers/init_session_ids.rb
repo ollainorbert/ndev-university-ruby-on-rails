@@ -1,0 +1,1 @@
+$session_locale_id = 'session_locale_id'
